@@ -59,10 +59,10 @@ async function displayJson () {
 
     const displayJson = æ("#displayJson")
 
-    fruitBowl.forEach(fruit => {
+    fruitBowl.forEach(fruit => {if (fruit.fruit) { 
         const li = document.createElement("li")
         li.textContent = fruit.fruit
-        displayJson.appendChild(li)
+        displayJson.appendChild(li)}
     })
 }
 
